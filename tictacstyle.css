@@ -8,7 +8,9 @@ tr, td {
 
 td {
     grid-template-rows: 25px 25px 25px;
-}
+    font-size: xx-large;
+     /* padding: 20% */
+} 
 
 img {
     padding: 7px;
@@ -22,3 +24,6 @@ img {
 /* .play1::after {
     content: 'X'
 } */
+p {
+    font-size: larger;
+}

@@ -9,15 +9,30 @@ const ticSpaceEight = document.getElementById("spot8")
 const ticSpaceNine = document.getElementById("spot9")
 const ticImgX = document.querySelector('img')
 let state = 1
+const tile1 = document.getElementById("ti1")
+const tile2 = document.getElementById("ti2")
+const tile3 = document.getElementById("ti3")
+const tile4 = document.getElementById("ti4")
+const tile5 = document.getElementById("ti5")
+const tile6 = document.getElementById("ti6")
+const tile7 = document.getElementById("ti7")
+const tile8 = document.getElementById("ti8")
+const tile9 = document.getElementById("ti9")
+const board = document.getElementById("board")
+
+for (let i = 0; i < board.length; i++) {
+    Array.push(board[i])
+}
+console.log(board[i])
 
 ticSpaceOne.addEventListener('click', function ticfunc1() {
         if (state === 1) {
-            ticSpaceOne.innerText = "X";
+            tile1.innerText = "X";
             // ticSpaceOne.disabled = true;
             state = 0
             ticSpaceOne.removeEventListener('click', ticfunc1);
         } else {
-            ticSpaceOne.innerText = "O";
+            tile1.innerText = "O";
             // ticSpaceOne.disabled = true;
             state = 1
             ticSpaceOne.removeEventListener('click', ticfunc1); 
@@ -26,12 +41,12 @@ ticSpaceOne.addEventListener('click', function ticfunc1() {
 )
 ticSpaceTwo.addEventListener('click', function ticfunc2() {
     if (state === 1) {
-        ticSpaceTwo.innerText = "X";
+        tile2.innerText = "X";
         // ticSpaceTwo.disabled = true;
         state = 0
         ticSpaceTwo.removeEventListener('click', ticfunc2);
     } else {
-        ticSpaceTwo.innerText = "O";
+        tile2.innerText = "O";
         // ticSpaceTwo.disabled = true;
         state = 1
         ticSpaceTwo.removeEventListener('click', ticfunc2);
@@ -40,13 +55,13 @@ ticSpaceTwo.addEventListener('click', function ticfunc2() {
 )
 ticSpaceThree.addEventListener('click', function ticfunc3() {
     if (state === 1) {
-        ticSpaceThree.innerText = "X";
-        ticSpaceThree.disabled = true;
+        tile3.innerText = "X";
+        // ticSpaceThree.disabled = true;
         state = 0;
         ticSpaceThree.removeEventListener('click', ticfunc3);
     } else {
-        ticSpaceThree.innerText = "O";
-        ticSpaceThree.disabled = true;
+        tile3.innerText = "O";
+        // ticSpaceThree.disabled = true;
         state = 1;
         ticSpaceThree.removeEventListener('click', ticfunc3);
         }
@@ -54,13 +69,13 @@ ticSpaceThree.addEventListener('click', function ticfunc3() {
 )
 ticSpaceFour.addEventListener('click',  function ticfunc4() {
     if (state === 1) {
-        document.getElementById("spot4").innerText = "X";
-        document.getElementById("spot4").disabled = true;
+       tile4.innerText = "X";
+    //    ticSpaceFour.disabled = true;
         state = 0;
         ticSpaceFour.removeEventListener('click', ticfunc4);
     } else {
-        document.getElementById("spot4").innerText = "O";
-        document.getElementById("spot4").disabled = true;
+        tile4.innerText = "O";
+        // ticSpaceFour.disabled = true;
         state = 1;
         ticSpaceFour.removeEventListener('click', ticfunc4);
         }
@@ -68,69 +83,71 @@ ticSpaceFour.addEventListener('click',  function ticfunc4() {
 )
 ticSpaceFive.addEventListener('click',  function ticfunc5() {
     if (state === 1) {
-        document.getElementById("spot5").innerText = "X";
-        document.getElementById("spot5").disabled = true;
+        tile5.innerText = "X";
+        // ticSpaceFive.disabled = true;
         state = 0
+        ticSpaceFive.removeEventListener('click', ticfunc5);
     } else {
-        document.getElementById("spot5").innerText = "O";
-        document.getElementById("spot5").disabled = true;
+        tile5.innerText = "O";
+        // ticSpaceFive.disabled = true;
         state = 1
+        ticSpaceFive.removeEventListener('click', ticfunc5);
         }
     }
 )
 ticSpaceSix.addEventListener('click',  function ticfunc6() {
     if (state === 1) {
-        document.getElementById("spot6").innerText = "X";
-        document.getElementById("spot6").disabled = true;
-        document.getElementById("spot6").removeEventListener;
+        tile6.innerText = "X";
+        // ticSpaceSix.disabled = true;
         state = 0
+        ticSpaceSix.removeEventListener('click', ticfunc6);
     } else {
-        document.getElementById("spot6").innerText = "O";
-        document.getElementById("spot6").disabled = true;
-        document.getElementById("spot6").removeEventListener;
+        tile6.innerText = "O";
+        // ticSpaceSix.disabled = true;
         state = 1
+        ticSpaceSix.removeEventListener('click', ticfunc6);
         }
     }
 )
 ticSpaceSeven.addEventListener('click',  function ticfunc7() {
     if (state === 1) {
-        document.getElementById("spot7").innerText = "X";
-        document.getElementById("spot7").disabled = true;
-        document.getElementById("spot7").removeEventListener;
+       tile7.innerText = "X";
+        // document.getElementById("spot7").disabled = true;
         state = 0
+        ticSpaceSeven.removeEventListener('click', ticfunc7);
     } else {
-        document.getElementById("spot7").innerText = "O";
-        document.getElementById("spot7").disabled = true;
-        document.getElementById("spot7").removeEventListener;
+        tile7.innerText = "O";
+        // document.getElementById("spot7").disabled = true;
         state = 1
+        ticSpaceSeven.removeEventListener('click', ticfunc7);
         }
     }
 )
 ticSpaceEight.addEventListener('click', function ticfunc8() {
     if (state === 1) {
-        document.getElementById("spot8").innerText = "X";
-        document.getElementById("spot8").disabled = true;
-        document.getElementById("spot8").removeEventListener;
+        tile8.innerText = "X";
+        // document.getElementById("spot8").disabled = true;
         state = 0
+       ticSpaceEight.removeEventListener('click', ticfunc8);
     } else {
-        document.getElementById("spot8").innerText = "O";
-        document.getElementById("spot8").disabled = true;
-        document.getElementById("spot8").removeEventListener;
+        tile8.innerText = "O";
+        // document.getElementById("spot8").disabled = true;
         state = 1
+        ticSpaceEight.removeEventListener('click', ticfunc8);
         }
     }
 )
 ticSpaceNine.addEventListener('click',  function ticfunc9() {
     if (state === 1) {
-        document.getElementById("spot9").innerText = "X";
-        document.getElementById("spot9").disabled = true;
-        document.getElementById("spot9").removeEventListener;
+        tile9.innerText = "X";
+        // document.getElementById("spot9").disabled = true;
         state = 0
+        ticSpaceNine.removeEventListener('click', ticfunc9);
     } else {
-        document.getElementById("spot9").innerText = "O";
-        document.getElementById("spot9").disabled = true;
-        document.getElementById("spot9").removeEventListener;
+       tile9.innerText = "O";
+        // document.getElementById("spot9").disabled = true;
         state = 1
+        ticSpaceNine.removeEventListener('click', ticfunc9);
         }
     }
 )
