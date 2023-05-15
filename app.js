@@ -20,10 +20,10 @@ const tile8 = document.getElementById("ti8")
 const tile9 = document.getElementById("ti9")
 const board = document.getElementById("board")
 
-for (let i = 0; i < board.length; i++) {
-    Array.push(board[i])
-}
-console.log(board[i])
+// for (let i = 0; i < board.length; i++) {
+//     Array.push(board[i])
+// }
+// console.log(board[i])
 
 ticSpaceOne.addEventListener('click', function ticfunc1() {
         if (state === 1) {
